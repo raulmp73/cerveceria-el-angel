@@ -40,53 +40,125 @@
 
   <section class="page-header">
     <div class="container">
-      <p class="kicker">Carta y menú diario</p>
-      <h1>Lo que cocinamos esta semana.</h1>
-      <p class="lede">Una muestra del menú diario y de los clásicos de la casa. La carta cambia con la huerta y con el mercado — si quieres saber lo de hoy, llámanos.</p>
+      <p class="kicker">Carta y menú del día</p>
+      <h1>Lo que cocinamos.</h1>
+      <p class="lede">Nuestra cocina: marisco fresco, arroces a fuego lento y postres caseros. La carta cambia con la temporada — si quieres saber qué hay hoy, llámanos.</p>
+    </div>
+  </section>
+
+  <!-- Menú del día destacado -->
+  <section class="section">
+    <div class="container">
+      <div class="menu-card" style="background: linear-gradient(135deg, #1f1b16 0%, #2a241c 100%); color: var(--cream); border: 1px solid var(--oro); padding: 2.4rem 2rem; max-width: 760px; margin: 0 auto;">
+        <p class="kicker" style="color: var(--oro);">Menú del día · de lunes a viernes</p>
+        <h2 style="color: var(--cream); margin-bottom: .5rem;">3 o 4 platos a elegir + postre, bebida y café.</h2>
+        <p style="color: rgba(251, 246, 238, 0.78); margin: 0 0 1.4rem;">Cocina casera de toda la vida a precio ajustado. Lo del día se decide por la mañana en función del mercado.</p>
+        <div style="display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+          <div>
+            <p style="color: var(--oro); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 0.5rem;">Ejemplo · primeros</p>
+            <ul style="list-style: none; padding: 0; margin: 0; color: rgba(251, 246, 238, 0.9);">
+              <li style="padding: .3rem 0;">Consomé con pelota</li>
+              <li style="padding: .3rem 0;">Gazpacho manchego</li>
+              <li style="padding: .3rem 0;">Canelones de carne</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color: var(--oro); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 0.5rem;">Ejemplo · segundos</p>
+            <ul style="list-style: none; padding: 0; margin: 0; color: rgba(251, 246, 238, 0.9);">
+              <li style="padding: .3rem 0;">Callos a la madrileña</li>
+              <li style="padding: .3rem 0;">Arroz con secreto y verduras</li>
+              <li style="padding: .3rem 0;">Pescado del día</li>
+            </ul>
+          </div>
+          <div>
+            <p style="color: var(--oro); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 0.5rem;">Postres caseros</p>
+            <ul style="list-style: none; padding: 0; margin: 0; color: rgba(251, 246, 238, 0.9);">
+              <li style="padding: .3rem 0;">Pan de Calatrava</li>
+              <li style="padding: .3rem 0;">Tarta de queso</li>
+              <li style="padding: .3rem 0;">Fruta del tiempo</li>
+            </ul>
+          </div>
+        </div>
+        <p style="color: var(--oro); margin-top: 1.4rem; font-size: 0.92rem;">Precio actualizado en barra. Llámanos para reservar.</p>
+      </div>
     </div>
   </section>
 
   <section class="section section-carta">
     <div class="container">
+      <header class="section-head">
+        <p class="kicker">Carta</p>
+        <h2>Lo que tenemos siempre.</h2>
+      </header>
       <div class="menu-grid">
         <article class="menu-card">
-          <h3>Entrantes para abrir boca</h3>
+          <h3>Para empezar</h3>
           <ul>
-            <li>Ahumados con pan de cristal</li>
+            <li>Calamar a la romana <em style="color: var(--terracota); font-size: 0.82rem;">(insignia)</em></li>
+            <li>Gamba blanca</li>
+            <li>Salpicón de pulpo</li>
+            <li>Croquetas de jamón de la casa</li>
+            <li>Patatas a la brava</li>
+            <li>Sepia a la plancha</li>
+            <li>Ensaladilla de marisco</li>
+            <li>Ensalada con mozzarella y anchoas</li>
+          </ul>
+        </article>
+        <article class="menu-card">
+          <h3>Alcachofas y huerta</h3>
+          <ul>
+            <li>Alcachofas por temporada</li>
+            <li>Alcachofas en flor con foie</li>
             <li>Flor de alcachofa con jamón</li>
-            <li>Ensalada de roble, queso fresco y frutos secos</li>
-            <li>Calamar a la romana</li>
+            <li>Tabla de patés, queso y confituras</li>
+            <li>"Caramelos" rellenos de bacalao con bechamel</li>
+          </ul>
+          <p class="muted small">Las alcachofas mandan en invierno y primavera.</p>
+        </article>
+        <article class="menu-card">
+          <h3>Arroces</h3>
+          <ul>
+            <li>Arroz caldoso con alcachofas y pulpo</li>
+            <li>Arroz meloso de pulpo</li>
+            <li>Arroz a banda</li>
+            <li>Arroz negro</li>
+            <li>Arroz con costra</li>
+            <li>Arroz de marisco</li>
+          </ul>
+          <p class="muted small">A fuego lento, pedido con tiempo.</p>
+        </article>
+        <article class="menu-card">
+          <h3>Pescados y marisco</h3>
+          <ul>
+            <li>Dorada a la espalda</li>
+            <li>Merluza al cava <em style="color: var(--terracota); font-size: 0.82rem;">(plato estrella)</em></li>
+            <li>Bacalao con bechamel</li>
+            <li>Pescado del día</li>
+            <li>Mariscada de la casa</li>
           </ul>
         </article>
         <article class="menu-card">
-          <h3>Cucharas</h3>
+          <h3>Carnes</h3>
           <ul>
-            <li>Consomé con pelota</li>
-            <li>Gazpacho manchego</li>
-            <li>Callos a la madrileña</li>
-            <li>Arroz con secreto y verduras</li>
-          </ul>
-        </article>
-        <article class="menu-card">
-          <h3>De la barra</h3>
-          <ul>
-            <li>Tabla de montaditos del día</li>
-            <li>Croquetas de la casa</li>
-            <li>Canelones de carne</li>
-            <li>Maridaje con vino sugerido</li>
+            <li>Carne a la piedra</li>
+            <li>Entrecot de vaca gallega</li>
+            <li>Chuletillas</li>
+            <li>Encebollados</li>
+            <li>Especiales del cocinero</li>
           </ul>
         </article>
         <article class="menu-card">
           <h3>Postres caseros</h3>
           <ul>
-            <li>Tarta del día</li>
-            <li>Pastel de chocolate</li>
-            <li>Postre de la abuela</li>
-            <li>Café de la huerta</li>
+            <li>Pan de Calatrava</li>
+            <li>Tarta de queso</li>
+            <li>Carrot cake</li>
+            <li>Tiramisú</li>
+            <li>Mantecados y toñas <em style="color: var(--muted); font-size: 0.82rem;">(Navidad)</em></li>
           </ul>
         </article>
       </div>
-      <p class="carta-nota">¿Quieres la carta completa? <a href="https://carta.menu/restaurants/almoradi/cerveceria-angel" rel="noopener" target="_blank">Verla en carta.menu</a> o pídela en barra.</p>
+      <p class="carta-nota">Tenemos rebozados <strong>sin gluten</strong> y opciones para celíacos. Avísanos al reservar. ¿Quieres la carta completa en PDF? <a href="https://carta.menu/restaurants/almoradi/cerveceria-bar-restaurante-el-angel" rel="noopener" target="_blank">Descargarla aquí</a> o pídela en barra.</p>
     </div>
   </section>
 

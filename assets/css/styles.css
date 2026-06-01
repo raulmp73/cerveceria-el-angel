@@ -128,14 +128,15 @@ em { font-style: italic; color: var(--terracota); }
   overflow: hidden;
 }
 .hero-art {
-  position: absolute; inset: 0; z-index: -1; opacity: 0.6;
-  background-image:
-    radial-gradient(2px 2px at 12% 22%, var(--oro) 50%, transparent 51%),
-    radial-gradient(2px 2px at 78% 60%, var(--terracota) 50%, transparent 51%),
-    radial-gradient(2px 2px at 35% 80%, var(--oro) 50%, transparent 51%),
-    radial-gradient(2px 2px at 65% 25%, var(--terracota) 50%, transparent 51%);
-  background-size: 240px 240px;
-  filter: blur(0.2px);
+  position: absolute; inset: 0; z-index: -1; opacity: 0.18;
+  background-image: url('../img/gallery/06.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px) saturate(1.1);
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(circle at 50% 40%, rgba(251,246,238,0.0), rgba(251,246,238,0.4) 60%, rgba(251,246,238,0.85) 100%);
 }
 .hero-inner { max-width: 880px; margin: 0 auto; text-align: center; }
 .hero h1 { margin: 0 0 1.2rem; }
