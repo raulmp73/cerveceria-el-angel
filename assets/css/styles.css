@@ -227,17 +227,6 @@ em { font-style: italic; color: var(--terracota); }
   border-bottom: 1px dashed var(--line);
   color: var(--terracota); font-family: "Playfair Display", Georgia, serif;
 }
-.menu-card-feature {
-  border-color: var(--oro);
-  background: linear-gradient(180deg, #fffaef 0%, #ffffff 100%);
-  position: relative;
-}
-.menu-card-feature::before {
-  content: "Seña de la casa"; position: absolute; top: -10px; right: 1rem;
-  font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
-  background: var(--oro); color: var(--ink); padding: 4px 10px; border-radius: 999px;
-  font-weight: 600;
-}
 .menu-card ul { list-style: none; padding: 0; margin: 0; }
 .menu-card li { padding: 0.45rem 0; border-bottom: 1px dotted var(--line); color: var(--ink-2); }
 .menu-card li:last-child { border-bottom: 0; }
