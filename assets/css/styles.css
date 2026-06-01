@@ -315,6 +315,80 @@ address { font-style: normal; color: var(--ink-2); line-height: 1.7; }
 .site-footer .muted { color: rgba(251, 246, 238, 0.6); }
 .legal { text-align: center; font-size: 0.82rem; color: rgba(251, 246, 238, 0.55); border-top: 1px solid rgba(251, 246, 238, 0.12); padding-top: 1.4rem; margin: 0; }
 
+/* -------- Active nav link -------- */
+.site-nav a.is-active { color: var(--terracota); }
+.site-nav a.is-active:not(.nav-cta) {
+  position: relative;
+}
+.site-nav a.is-active:not(.nav-cta)::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -6px;
+  height: 2px; background: var(--terracota); border-radius: 2px;
+}
+.site-nav a.nav-cta.is-active { background: var(--terracota-d); }
+
+/* -------- Page header (sub pages) -------- */
+.page-header {
+  padding: clamp(4rem, 7vw, 6rem) 4vw clamp(2.5rem, 5vw, 4rem);
+  background:
+    radial-gradient(circle at 85% 10%, rgba(200, 168, 91, 0.16), transparent 55%),
+    linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.page-header .container { max-width: 820px; }
+.page-header h1 {
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
+  margin: 0.2rem 0 1rem;
+}
+.page-header .lede {
+  color: var(--ink-2); font-size: 1.08rem;
+  max-width: 60ch; margin: 0 auto;
+}
+
+/* -------- Centered CTA row -------- */
+.centered-cta {
+  text-align: center; margin-top: 2.5rem;
+  display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap;
+}
+
+/* -------- Explore grid (home cards) -------- */
+.section-explora { background: var(--cream); }
+.explore-grid {
+  display: grid; gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.explore-card {
+  display: flex; flex-direction: column; gap: 0.6rem;
+  background: #fff; border: 1px solid var(--line); border-radius: 18px;
+  padding: 1.8rem 1.6rem; box-shadow: var(--shadow);
+  color: var(--ink); text-decoration: none;
+  transition: transform .2s ease, border-color .2s ease;
+}
+.explore-card:hover {
+  transform: translateY(-3px); border-color: var(--oro); text-decoration: none;
+}
+.explore-tag {
+  display: inline-block; width: max-content;
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.15em;
+  color: var(--terracota); font-weight: 600;
+}
+.explore-card h3 { margin: 0.2rem 0 0.4rem; font-size: 1.35rem; }
+.explore-card p { margin: 0 0 0.6rem; color: var(--muted); }
+.explore-link {
+  margin-top: auto; color: var(--terracota); font-weight: 600;
+}
+
+/* -------- Reserve strip (compact banner) -------- */
+.reserve-strip {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 2rem; flex-wrap: wrap;
+}
+.reserve-strip h2 { margin: 0.2rem 0 0.4rem; }
+.reserve-strip p { margin: 0; }
+@media (max-width: 720px) {
+  .reserve-strip { flex-direction: column; align-items: flex-start; }
+}
+
 /* -------- Accessibility -------- */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
