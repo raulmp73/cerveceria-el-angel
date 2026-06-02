@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cervecería El Ángel">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f7f0e2"/>
+    </radialGradient>
+  </defs>
+  <circle cx="120" cy="120" r="116" fill="url(#bg)" stroke="#c8a85b" stroke-width="2"/>
+
+  <!-- Pequeño ángel: cabeza, halo, alas, cuerpo amarillo -->
+  <g transform="translate(120 70)" fill="#1f1b16" stroke="none">
+    <!-- Halo -->
+    <ellipse cx="0" cy="-8" rx="11" ry="3" fill="none" stroke="#c8a85b" stroke-width="2"/>
+    <!-- Cabeza -->
+    <circle cx="0" cy="-2" r="5" fill="#c8a85b"/>
+    <!-- Cuerpo amarillo (triángulo redondeado) -->
+    <path d="M0 4 Q-13 14 -10 28 Q0 22 10 28 Q13 14 0 4 Z" fill="#f1c75b"/>
+    <!-- Ala izquierda -->
+    <path d="M-9 8 Q-26 6 -22 22 Q-14 18 -8 18 Z" fill="#fff" stroke="#1f1b16" stroke-width="1.2" stroke-linejoin="round"/>
+    <!-- Ala derecha -->
+    <path d="M9 8 Q26 6 22 22 Q14 18 8 18 Z" fill="#fff" stroke="#1f1b16" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- "El Ángel" en cursiva -->
+  <text x="120" y="160" text-anchor="middle"
+        font-family="'Brush Script MT','Lucida Handwriting','Snell Roundhand',cursive"
+        font-size="56" font-style="italic" font-weight="700"
+        fill="#1f1b16">
+    El Ángel
+  </text>
+
+  <!-- Línea separadora -->
+  <line x1="60" y1="180" x2="180" y2="180" stroke="#c8a85b" stroke-width="1.2"/>
+
+  <!-- Tagline -->
+  <text x="120" y="200" text-anchor="middle"
+        font-family="Inter, Arial, sans-serif" font-size="10" letter-spacing="3"
+        fill="#1f1b16" font-weight="600">
+    GASTROBAR · DESDE 1966
+  </text>
+  <text x="120" y="217" text-anchor="middle"
+        font-family="Inter, Arial, sans-serif" font-size="9" letter-spacing="6"
+        fill="#6e6356">
+    ALMORADÍ
+  </text>
+</svg>
